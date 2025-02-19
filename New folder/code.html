@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td><input type="text" placeholder="Name" id="n"></td>    
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="profile url" id="p"></td>
+            
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="About" id="a"></td>
+            </tr>
+            
+                
+                
+                
+            
+        </table>
+        <button onclick="update()">submit</button>
+    </div>    
+
+    <div>
+            <h1 id="h1">Name</h1>
+            <img src="https://th.bing.com/th/id/OIP.SOJRgnp7cUxAh_DnQDPx6QHaEK?w=306&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" id="img">
+            <h1 id="h2">About</h1>
+
+    </div>
+        
+    
+    <script>
+        function update(){
+            let name = document.getElementById("n").value;
+            document.getElementById("h1").innerHTML=name;
+            let url = document.getElementById("p").value;
+            document.getElementById("img").src=url;
+            let about = document.getElementById("a").value;
+            document.getElementById("h2").innerHTML=about;
+        }
+    </script>
+</body>
+</html> 
